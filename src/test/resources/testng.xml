@@ -1,0 +1,17 @@
+<suite name="SBMTestSuite"
+       parallel="none"
+       preserve-order="true" verbose="10">
+    <!--<test name="test-fail">
+        <packages>
+            <package name="org.springframework"/>
+        </packages>
+    </test>-->
+    <test name="test-success">
+        <packages>
+            <package name="org.springframework">
+                <exclude name="org.springframework.aop.*"/>
+                <exclude name="org.springframework.beans.*"/>
+            </package>
+        </packages>
+    </test>
+</suite>
